@@ -1,4 +1,4 @@
-###Spruce is a simple utility for Alpine Email.
+# Spruce is a simple utility for Alpine Email.
 
 Spruce will:
 
