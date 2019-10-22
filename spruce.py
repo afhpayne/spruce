@@ -13,7 +13,7 @@ soft_name = "spruce.py"
 soft_tag  = "a handy tool for Alpine email"
 
 # Software version 
-soft_vers = "beta 0.50"
+soft_vers = "beta 0.51"
 
 user_home = os.environ['HOME']
 
@@ -55,7 +55,8 @@ while stay_main == 1:
             for pinercex in os.listdir(os.path.join(user_home, ".alpine/")):
                 if pinercex.startswith('pinercex'):
                     account_list.append(pinercex)
-            
+                    account_list.sort()
+
             for item in account_list:
                 with open(os.path.join("/home/andrew/.alpine", item)) as document:
                     for line in document:
