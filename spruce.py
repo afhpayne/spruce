@@ -4,6 +4,7 @@
 import csv
 import os
 import re
+import readline
 import shutil
 import subprocess
 import time
@@ -13,7 +14,7 @@ soft_name = "spruce.py"
 soft_tag  = "a handy tool for Alpine email"
 
 # Software version 
-soft_vers = "beta 0.51"
+soft_vers = "beta 0.5.2"
 
 user_home = os.environ['HOME']
 
