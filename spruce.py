@@ -1,5 +1,28 @@
 #!/usr/bin/env python3
+
 # Andrew Payne, contact(*t)duckbrainsoftware(d*t)com
+
+# MIT License
+
+# Copyright (c) 2019-2020 Andrew Payne
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
 
 import csv
 import os
@@ -13,8 +36,8 @@ import time
 soft_name = "spruce.py"
 soft_tag  = "a handy tool for Alpine email."
 
-# Software version 
-soft_vers = "beta 0.6.2"
+# Software version
+soft_vers = "beta 0.6.3"
 
 # Variables
 user_home = os.environ['HOME']
@@ -103,7 +126,7 @@ while main_menu_loop == 0:
     elif main_menu == "I" or main_menu == 'i':
         print_main_func()
         print_sub_i_func()
-        print('subprocess.run(["goose.py", "--alpine"])')
+        subprocess.run(["goose.py", "--spruce"])
         main_menu_loop = 1
         exit(0)
     else:
