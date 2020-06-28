@@ -37,7 +37,7 @@ soft_name = "spruce.py"
 soft_tag  = "a handy tool for Alpine email."
 
 # Software version
-soft_vers = "beta 0.6.3"
+soft_vers = "0.6.5"
 
 # Variables
 user_home = os.environ['HOME']
@@ -100,11 +100,15 @@ def choose_account_func():
             continue
         else:
             pick_num = 1
-            # Call a dictionary of tuples where [0] is the email and [1] is the pinercex file
+            # Call a dictionary of tuples where [0] is the email 
+            # and [1] is the pinercex file
             for key,email in email_dict.items():
                 if key == int(account_pick):
-                    shutil.copy2(os.path.join(user_home, ".alpine", email[1]), os.path.join(user_home, ".pinercex"))
-                    subprocess.run(['alpine', '-passfile', os.path.join(user_home, '.pine-passfile')])
+                    subprocess.run(['alpine',
+                        '-passfile',
+                            os.path.join(user_home, '.pine-passfile'),
+                        '-x',
+                            os.path.join(user_home, '.alpine', email[1])])
                     exit(0)
 
 # Let's get started
