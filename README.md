@@ -21,6 +21,7 @@ CONTENTS:
 <br><br>
 ## Dependencies: 
 Python 3.6 or newer
+[goose.py](https://github.com/afhpayne/goose)
 
 <br><br>
 ## Running:
