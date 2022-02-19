@@ -15,13 +15,13 @@ CONTENTS:
 
 [Notes](#notes)
 
-## Changelog:
-0.6.6 -- remove broken password file argument
+## Changelog: 
+0.6.6 -- remove broken password file argument  
 0.6.5 -- bug fixes
 
 
 <br><br>
-## Dependencies:
+## Dependencies: 
 Python 3.6 or newer
 
 
