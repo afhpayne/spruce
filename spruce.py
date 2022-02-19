@@ -4,7 +4,7 @@
 
 # MIT License
 
-# Copyright (c) 2019-2020 Andrew Payne
+# Copyright (c) 2019-2022 Andrew Payne
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -37,7 +37,7 @@ soft_name = "spruce.py"
 soft_tag  = "a handy tool for Alpine email."
 
 # Software version
-soft_vers = "0.6.5"
+soft_vers = "0.6.6"
 
 # Variables
 user_home = os.environ['HOME']
@@ -104,11 +104,9 @@ def choose_account_func():
             # and [1] is the pinercex file
             for key,email in email_dict.items():
                 if key == int(account_pick):
-                    subprocess.run(['alpine',
-                        '-passfile',
-                            os.path.join(user_home, '.pine-passfile'),
-                        '-x',
-                            os.path.join(user_home, '.alpine', email[1])])
+                    subprocess.run(
+                        ['alpine','-x',os.path.join(user_home, '.alpine', email[1])]
+                    )
                     exit(0)
 
 # Let's get started
