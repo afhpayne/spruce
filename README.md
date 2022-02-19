@@ -1,8 +1,6 @@
 ## Spruce is a simple utility for Alpine Email.
 
-Spruce will:
-
-* present two options on launch:
+Spruce will present two options on launch: 
   1. (C)HOOSE an email account to open (any number of email accounts can easily be selected)
   2. (I)MPORT contacts from Google Contacts or Outlook csv file
 
