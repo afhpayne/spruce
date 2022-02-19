@@ -34,11 +34,8 @@ Python 3.6 or newer
 #### Notes:
 Alpine Email is great. The spruce.py script is an effort to smooth out two limitations: (1) lack of support for multiple accounts, and (2) no ability to import contacts from Gxxgle/Micrxsxft.
 
-1. Using Alpine's ability to supercede its default pinerc config file using a pinercex file, Spruce allows the user to select from any number of pinercex files on launch, resulting a simple way to choose from a list of email accounts quickly. Alpine must still be restarted to change accounts, but it's faster than hand-copying files in the terminal.
-
+1. Using Alpine's ability to supercede its default pinerc config file using a pinercex file, Spruce allows the user to select from any number of pinercex files on launch, resulting a simple way to choose from a list of email accounts quickly. Alpine must still be restarted to change accounts, but it's faster than hand-copying files in the terminal.  
 ###### -- spruce.py will look in the folder /home/$USER/.alpine/ for pinercex files
 
 2. Spruce can call my contact import utility goose.py, which allows contacts to be imported into an Alpine formatted file from a Google Contacts or Outlook csv file. There is no two-way sync at this time. Alpine only stores names and emails anyway, so keeping a master contact file elsewhere is necessary in any event.
-
-Inspect the code in the script before running it.
 
